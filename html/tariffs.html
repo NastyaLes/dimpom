@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тарифы</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/tariffs.css" />
+    <script src="../js/gettariffs.js"></script>
+    <script src="../js/checklocalstorage.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="../img/logo.png"
+          alt="Логотип"
+          id="logo-img"
+          onclick="document.location='main.html'"
+        />
+        <div>
+          <p id="logo-name">турбо</p>
+          <small id="logo-small">везем к цели быстро и с комфортом</small>
+        </div>
+      </div>
+      <nav>
+        <ul id="navigation">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="../index.html">Сделать заказ</a></li>
+        </ul>
+      </nav>
+      <div class="buttons" id="buttons-header"></div>
+    </header>
+    <main class="container">
+      <nav class="links">
+        <ul id="links-nav"></ul>
+      </nav>
+      <div id="wrapper">
+        <div class="pages" id="pages-nav"></div>
+        <div>
+          <h4>Бесплатные услуги которые можно указать при заказе</h4>
+          <ul id="services">
+            <li>Перевожу домашнее животное</li>
+            <li>Буду с инвалидным креслом</li>
+            <li>Помогите найти машину</li>
+            <li>Общаюсь только текстом</li>
+            <li>Не говорю но слышу</li>
+            <li>Помогите понять заказ</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

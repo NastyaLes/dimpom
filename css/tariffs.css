@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+*, *:after, *:before {
+    box-sizing: inherit; /*Наследует значение родителя*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(121deg, rgba(141,169,194,1) 0%, rgba(214,239,245,1) 50%, rgba(141,169,194,1) 100%);
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+.active {
+    background-color: #EEC831;
+}
+.container {
+    width: 80vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    top: 30%;
+    left: 10%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.links {
+    width: 100%;
+}
+#links-nav li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+#wrapper {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 20px;
+    font-size: 18px;
+}
+.info {
+    list-style-type: none;
+}
+#services {
+    list-style-type: square;
+}
+#links-nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid #EEC831;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#links-nav {
+    list-style-type: none;
+}

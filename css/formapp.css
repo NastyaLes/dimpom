@@ -1,0 +1,44 @@
+.form {
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+.form .input-box input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #707070;
+    border-radius: 6px;
+    padding: 0 5px;
+}
+.form .column {
+    display: flex;
+    column-gap: 35px;
+}
+.form button {
+    height: 55px;
+    width: 100%;
+    background-color: #EEC831;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.answer {
+    color: darkred;
+    font-size: bold;
+}

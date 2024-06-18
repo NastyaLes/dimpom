@@ -1,0 +1,84 @@
+header {
+    min-width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-index {
+    position: absolute;
+    z-index: 2;
+}
+#logo {
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#logo-img {
+    transition: transform 0.5s ease;
+}
+#logo-name {
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url('../img/background-text.jpg');
+    color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 2px black;
+}
+#logo-small {
+    text-transform: uppercase;
+}
+#navigation li {
+    display: inline;
+    transition: transform 0.5s ease;
+}
+#navigation li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+#navigation {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-header {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 3px solid #EEC831;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+.btn-header:hover {
+    background-color: #EEC831;
+    color: white;
+}
+#navigation li:hover {
+    transform: scale(1.1);
+}
+#logo-img:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width: 880px){
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карта</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/formorder.css" />
+
+    <script src="https://api-maps.yandex.ru/v3/?apikey=01166edc-f72c-4ec7-9937-95ad19df7e71&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/selecttariffs.js"></script>
+    <script src="js/checklocalstorage.js"></script>
+    <script src="js/getuser.js"></script>
+    <script src="js/order.js"></script>
+  </head>
+  <body>
+    <header id="header-index">
+      <div id="logo">
+        <img
+          src="img/logo.png"
+          alt="Логотип"
+          id="logo-img"
+          onclick="document.location='html/main.html'"
+        />
+        <div>
+          <p id="logo-name">турбо</p>
+          <small id="logo-small">везем к цели быстро и с комфортом</small>
+        </div>
+      </div>
+      <nav>
+        <ul id="navigation">
+          <li><a href="html/main.html">Главная</a></li>
+          <li><a href="html/tariffs.html">Тарифы</a></li>
+          <li><a href="index.html">Сделать заказ</a></li>
+        </ul>
+      </nav>
+      <div class="buttons" id="buttons-index"></div>
+    </header>
+    <main>
+      <div id="map"></div>
+      <div>
+        <form class="form" id="form-order">
+          <p>Для заказа заполните следующие данные:</p>
+          <div class="input-box">
+            <label>Откуда</label>
+            <input
+              type="text"
+              id="in-order"
+              name="address_in"
+              placeholder="Укажите улицу и дом или станцию метро"
+              required
+              onchange="getAddress1(this.value);"
+            />
+          </div>
+          <div class="input-box">
+            <label>Куда</label>
+            <input
+              type="text"
+              id="to-order"
+              name="address_to"
+              placeholder="Укажите улицу и дом или станцию метро"
+              required
+              onchange="getAddress2(this.value);"
+            />
+          </div>
+          <div class="input-box">
+            <label>Имя</label>
+            <input type="text" id="name-order" name="namee" required />
+          </div>
+          <div class="input-box">
+            <label>Телефон</label>
+            <input
+              type="tel"
+              id="tel-order"
+              name="tel"
+              placeholder="+..."
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label>Тариф</label>
+            <select
+              id="tariff-order"
+              name="tariff"
+              required
+              onchange="distance();"
+            ></select>
+          </div>
+          <div class="input-box">
+            <label>Время пути (с учетом пробок)</label>
+            <input type="text" id="time-order" name="time" readonly />
+          </div>
+          <div class="input-box">
+            <label>Расстояние (в км)</label>
+            <input type="text" id="km-order" name="km" readonly />
+          </div>
+          <div class="input-box">
+            <label>Цена</label>
+            <input
+              type="text"
+              id="price-order"
+              name="price"
+              placeholder="Цена"
+              readonly
+            />
+          </div>
+          <div class="input-box">
+            <label>Комментарий</label>
+            <textarea
+              name="comm"
+              placeholder="Укажите дополнительную информацию, которую водитель должен взять во внимание"
+              required
+            ></textarea>
+          </div>
+          <div class="answer" id="answer-order"></div>
+          <button onclick="order(event);">Заказать</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

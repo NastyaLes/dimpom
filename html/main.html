@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/formapp.css" />
+    <script src="../js/checklocalstorage.js"></script>
+    <script src="../ukiyo.min.js"></script>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../jquery.scrollme.min.js"></script>
+  </head>
+  <body>
+    <header id="header-index">
+      <div id="logo">
+        <img
+          src="../img/logo.png"
+          alt="Логотип"
+          id="logo-img"
+          onclick="document.location='main.html'"
+        />
+        <div>
+          <p id="logo-name">турбо</p>
+          <small id="logo-small">везем к цели быстро и с комфортом</small>
+        </div>
+      </div>
+      <nav>
+        <ul id="navigation">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="../index.html">Сделать заказ</a></li>
+        </ul>
+      </nav>
+      <div class="buttons" id="buttons-header"></div>
+    </header>
+    <div class="fragment">
+      <img src="../img/mainn.jpg" alt="Картинка такси" class="ukiyo" />
+      <div id="wrapper">
+        <aside>
+          <p class="text-main">Служба такси ТУРБО</p>
+          <p class="text-main">Везем к цели быстро и с комфортом</p>
+        </aside>
+        <aside>
+          <form class="form" id="form-app">
+            <h2>Оставьте заявку и мы вам перезвоним</h2>
+            <div class="input-box">
+              <label>Имя</label>
+              <input type="text" placeholder="Имя" name="namee" required />
+            </div>
+            <div class="input-box">
+              <label>Телефон</label>
+              <input type="tel" placeholder="Телефон" name="tel" required />
+            </div>
+            <div class="answer" id="answer-app"></div>
+            <button onclick="sendapp(event);">Отправить</button>
+          </form>
+          <script src="../js/sendapp.js"></script>
+        </aside>
+      </div>
+    </div>
+    <main>
+      <h1>О нас</h1>
+      <section>
+        <p id="text-main">
+          Наша служба предлагает идеальное сочетание скорости и комфорта в
+          каждой поездке. Доверьтесь нам, и мы доставим вас к месту назначения
+          без лишних задержек, обеспечивая высокий уровень сервиса и
+          безопасность в пути. Добирайся до нужного места с удовольствием вместе
+          с нами!
+        </p>
+      </section>
+      <h1>Все наши автомобили</h1>
+      <section id="image-car">
+        <div class="image"></div>
+        <img src="../img/classic-taxi.jpg" />
+        <img src="../img/econom-taxi.jpg" />
+        <img src="../img/limousine-taxi.jpg" />
+        <img src="../img/minivan-taxi.jpg" />
+        <img src="../img/suv-taxi.jpg" />
+        <img src="../img/wagon-taxi.jpg" />
+      </section>
+      <h1>Наши преимущества</h1>
+      <section id="wrapper2">
+        <div class="pom">
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Фиксированная цена</p>
+            </div>
+          </div>
+
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Машины премиум-класса</p>
+            </div>
+          </div>
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Сервис на высшем уровне</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pom">
+          <img src="../img/car.png" id="car" />
+        </div>
+        <div class="pom">
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Бесплатные услуги</p>
+            </div>
+          </div>
+
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Маршруты с учетом пробок</p>
+            </div>
+          </div>
+
+          <div class="scrollme">
+            <div
+              class="animateme"
+              data-when="enter"
+              data-from="0.5"
+              data-to="0"
+              data-opacity="0"
+              data-scale="1.5"
+              data-crop="false"
+            >
+              <p>Не требуется регистрация</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="index.html">Сделать заказ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контактная информация</h3>
+        <p>Телефон: +71112223344</p>
+        <p>Электронная почта: support@turbo.com</p>
+        <p>Адрес офиса:</p>
+      </div>
+    </footer>
+    <script>
+      const image = document.querySelectorAll(".ukiyo");
+      new Ukiyo(image, {
+        speed: 3,
+        scale: 1.4,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit; /*Наследует значение родителя*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../img/goldride.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 12vh;
+}
+#container {
+    min-width: 350px;
+    width: 30vw;
+    min-height: 45vh;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}

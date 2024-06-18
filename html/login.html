@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Логин</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/formreglogin.css" />
+    <link rel="stylesheet" href="../css/reglogin.css" />
+    <script src="../js/checklocalstorage.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="../img/logo.png"
+          alt="Логотип"
+          id="logo-img"
+          onclick="document.location='main.html'"
+        />
+        <div>
+          <p id="logo-name">турбо</p>
+          <small id="logo-small">везем к цели быстро и с комфортом</small>
+        </div>
+      </div>
+      <nav>
+        <ul id="navigation">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="../index.html">Сделать заказ</a></li>
+        </ul>
+      </nav>
+      <div class="buttons" id="buttons-header"></div>
+    </header>
+    <main>
+      <div id="container">
+        <h1>Вход</h1>
+        <form class="form" id="form-login">
+          <div class="input-box">
+            <label>Телефон</label>
+            <input type="tel" placeholder="Телефон" name="login" />
+          </div>
+          <div class="input-box">
+            <label>Пароль</label>
+            <input type="password" placeholder="Пароль" name="password" />
+          </div>
+          <button onclick="checklogin(event);">Войти</button>
+          <div class="answer" id="answer-login"></div>
+          <p class="para-2">
+            Нет аккаунта? <a href="registration.html">Зарегистрироваться</a>
+          </p>
+        </form>
+        <script src="../js/checklogin.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

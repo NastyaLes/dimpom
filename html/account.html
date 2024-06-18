@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="../js/checklocalstorage.js"></script>
+    <script src="../js/datauser.js"></script>
+</head>
+<body>
+        <header>
+          <div id="logo">
+            <img src="../img/logo.png" alt="Логотип" id="logo-img" onclick="document.location='main.html'">
+            <div>
+                <p id="logo-name">турбо</p>
+                <small id="logo-small">везем к цели быстро и с комфортом</small>
+        </div>
+        </div>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="tariffs.html">Тарифы</a></li>
+                    <li><a href="../index.html">Сделать заказ</a></li>
+                </ul>
+            </nav>
+            <div id="buttons-header">
+            </div>
+        </header>
+        <main>
+        <section>
+        </section>
+        <h1>Данные о пользователе</h1>
+        <div id="data-user">
+
+        </div>
+        </section>
+
+            <section>
+            <h1>Мои заказы</h1>
+            <table id="table">
+                <thead>
+                  <tr>
+                    <th>Имя и фамилия водителя</th>
+                    <th>Количество минут</th>
+                    <th>Цена</th>
+                    <th>Комментарий</th>
+                    <th>Статус заказа</th>
+                    <th>Дата и время создания заказа</th>
+                    <th>Удалить заказ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </section>
+        <section>
+          <button class="btn-delete" onclick="deleteaccount(event);">Удалить аккаунт</button>
+        </section>
+        </main>
+</body>
+</html>
